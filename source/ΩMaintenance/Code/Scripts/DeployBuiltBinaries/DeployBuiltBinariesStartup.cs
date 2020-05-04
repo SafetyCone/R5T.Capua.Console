@@ -1,0 +1,43 @@
+﻿using System;
+
+using Microsoft.Extensions.DependencyInjection;
+using Microsoft.Extensions.Logging;
+
+using R5T.Capua;
+using R5T.Capua.Common;
+using R5T.Capua.Source;
+using R5T.Capua.Standard;
+using R5T.Dacia;
+using R5T.Lombardy;
+using R5T.Macommania;
+using R5T.Macommania.Standard;
+using R5T.Richmond;
+
+using ΩMaintenance.Services;
+
+
+namespace ΩMaintenance
+{
+    class DeployBuiltBinariesStartup : StartupBase
+    {
+        public DeployBuiltBinariesStartup(ILogger<StartupBase> logger)
+            : base(logger)
+        {
+        }
+
+        protected override void ConfigureServicesBody(IServiceCollection services)
+        {
+            services
+                .AddDeployBuiltBinariesAction<IDeployBuiltBinariesAction>(
+                    new ServiceAction<IBuildConfigurationNameProvider>(() => services.AddSingleton<IBuildConfigurationNameProvider, BuildConfigurationNameProvider>()),
+                    new ServiceAction<IProjectNameProvider>(() => services.AddSingleton<IProjectNameProvider, ProjectNameProvider>()),
+                    new ServiceAction<ISolutionDirectoryPathProvider>(() => services.AddSingleton<ISolutionDirectoryPathProvider, SolutionDirectoryPathProvider>()),
+                    new ServiceAction<ITargetFrameworkNameProvider>(() => services.AddSingleton<ITargetFrameworkNameProvider, TargetFrameworkNameProvider>())
+                )
+                .AddExecutableFileDirectoryPathProvider<IExecutableFileDirectoryPathProvider>()
+                .AddSingleton<ISolutionAndProjectFileSystemConventions, StandardSolutionAndProjectFileSystemConventions>()
+                .AddDefaultStringlyTypedPathOperator<IStringlyTypedPathOperator>()
+                ;
+        }
+    }
+}
