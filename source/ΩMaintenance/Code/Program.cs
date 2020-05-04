@@ -2,7 +2,6 @@
 using System.Threading.Tasks;
 
 using ΩMaintenance.Scripts;
-using ΩMaintenance.Services;
 
 
 namespace ΩMaintenance
@@ -11,14 +10,14 @@ namespace ΩMaintenance
     {
         static async Task Main(string[] args)
         {
-            await DeployBuiltBinaries.SubMain();
-        }
+            string projectName = "Capua";
+            string buildConfigurationName = "Debug";
+            string targetFrameworkName = "netcoreapp2.2";
 
-        public static void ConfigureProjectSpecificValues()
-        {
-            ProjectNameProvider.ProjectName = "Capua";
-            BuildConfigurationNameProvider.BuildConfigurationName = "Debug";
-            TargetFrameworkNameProvider.TargetFrameworkName = "netcoreapp2.2";
-        }
+            Configuration.ConfigureProjectSpecificValues(projectName, buildConfigurationName, targetFrameworkName);
+
+            // Scripts.
+            await DeployBuiltBinaries.SubMain();
+        }   
     }
 }

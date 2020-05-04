@@ -13,8 +13,6 @@ namespace ΩMaintenance.Scripts
     {
         public static async Task SubMain()
         {
-            Program.ConfigureProjectSpecificValues();
-
             await HostedServiceProgram.RunAsync<DeployBuiltBinaries, DeployBuiltBinariesStartup>();
         }
 
