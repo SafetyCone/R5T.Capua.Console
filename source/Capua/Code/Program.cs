@@ -6,8 +6,6 @@ using Microsoft.Extensions.Hosting;
 using R5T.Capua;
 using R5T.Liverpool;
 
-using Capua.Services;
-
 
 namespace Capua
 {
@@ -15,23 +13,9 @@ namespace Capua
     {
         static async Task Main(string[] args)
         {
-            Program.SetCommandLineArguments();
+            //Construction.SetCommandLineArguments();
 
             await HostedServiceProgram.RunAsync<Program, Startup>();
-        }
-
-        private static void SetCommandLineArguments()
-        {
-            var actualCommandLineArguments = Environment.GetCommandLineArgs();
-
-            DummyCommandLineArgumentsProvider.CommandLineArguments = new[]
-            {
-                actualCommandLineArguments[0], // The executable path.
-                @"C:\GitHub\MinexAutomation\R5T.Capua.Console\source",
-                "Capua",
-                "Debug",
-                "netcoreapp2.2"
-            };
         }
 
 

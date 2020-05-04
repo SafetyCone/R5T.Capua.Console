@@ -9,6 +9,7 @@ using R5T.Capua.Common;
 using R5T.Capua.Source;
 using R5T.Capua.Standard;
 using R5T.Dacia;
+using R5T.Dacia.Extensions;
 using R5T.Richmond;
 
 using Capua.Services;
@@ -32,8 +33,17 @@ namespace Capua
                     new ServiceAction<ISolutionDirectoryPathProvider>(() => services.AddSingleton<ISolutionDirectoryPathProvider, SolutionDirectoryPathProvider>()),
                     new ServiceAction<ITargetFrameworkNameProvider>(() => services.AddSingleton<ITargetFrameworkNameProvider, TargetFrameworkNameProvider>())
                     )
-                .AddSingleton<ICommandLineArgumentsProvider, DummyCommandLineArgumentsProvider>()
-                //.AddCommandLineArgumentsProvider<ICommandLineArgumentsProvider>()
+                .AddServices(serviceCollection =>
+                {
+                    if(DummyCommandLineArgumentsProvider.UseDummyCommandLineArguments)
+                    {
+                        serviceCollection.AddSingleton<ICommandLineArgumentsProvider, DummyCommandLineArgumentsProvider>();
+                    }
+                    else
+                    {
+                        serviceCollection.AddCommandLineArgumentsProvider<ICommandLineArgumentsProvider>();
+                    }
+                })
                 ;
         }
     }

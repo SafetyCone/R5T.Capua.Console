@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "Capua": {
+      "commandName": "Project",
+      "commandLineArgs": "C:\\GitHub\\MinexAutomation\\R5T.Capua.Console\\source Capua Debug netcoreapp2.2"
+    }
+  }
+}

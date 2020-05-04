@@ -7,7 +7,18 @@ namespace Capua.Services
 {
     class DummyCommandLineArgumentsProvider : ICommandLineArgumentsProvider
     {
-        public static string[] CommandLineArguments { get; set; }
+        public const string[] InitialDummyCommandLineArguments = null;
+
+
+        public static string[] CommandLineArguments { get; set; } = DummyCommandLineArgumentsProvider.InitialDummyCommandLineArguments;
+        public static bool UseDummyCommandLineArguments
+        {
+            get
+            {
+                var useDummyCommandLineArguments = DummyCommandLineArgumentsProvider.CommandLineArguments != DummyCommandLineArgumentsProvider.InitialDummyCommandLineArguments;
+                return useDummyCommandLineArguments;
+            }
+        }
 
 
         public string[] GetCommandLineArguments()
