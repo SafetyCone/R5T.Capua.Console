@@ -1,7 +1,7 @@
 ﻿using System;
 
 using R5T.Argumentos;
-using R5T.Capua.Common;
+using R5T.Palembang;
 
 
 namespace Capua.Services
