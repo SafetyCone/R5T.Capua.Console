@@ -1,6 +1,6 @@
 ﻿using System;
 
-using ΩMaintenance.Services;
+using R5T.Palembang.Default;
 
 
 namespace ΩMaintenance
@@ -9,9 +9,9 @@ namespace ΩMaintenance
     {
         public static void ConfigureProjectSpecificValues(string projectName, string buildConfigurationName, string targetFrameworkName)
         {
-            ProjectNameProvider.ProjectName = projectName;
-            BuildConfigurationNameProvider.BuildConfigurationName = buildConfigurationName;
-            TargetFrameworkNameProvider.TargetFrameworkName = targetFrameworkName;
+            StaticValueProjectNameProvider.ProjectName = projectName;
+            StaticValueBuildConfigurationNameProvider.BuildConfigurationName = buildConfigurationName;
+            StaticValueTargetFrameworkNameProvider.TargetFrameworkName = targetFrameworkName;
         }
     }
 }
