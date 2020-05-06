@@ -10,6 +10,7 @@
     <ProjectReference Include="..\..\..\R5T.Capua\source\R5T.Capua.Standard\R5T.Capua.Standard.csproj" />
     <ProjectReference Include="..\..\..\R5T.Liverpool\source\R5T.Liverpool.HostedServiceProgram\R5T.Liverpool.HostedServiceProgram.csproj" />
     <ProjectReference Include="..\..\..\R5T.Macommania.Standard\source\R5T.Macommania.Standard\R5T.Macommania.Standard.csproj" />
+    <ProjectReference Include="..\..\..\R5T.Palembang.Default\source\R5T.Palembang.Default\R5T.Palembang.Default.csproj" />
     <ProjectReference Include="..\..\..\R5T.Richmond.Types\source\R5T.Richmond.Types\R5T.Richmond.Types.csproj" />
   </ItemGroup>
 
