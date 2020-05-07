@@ -6,15 +6,15 @@ using Microsoft.Extensions.Logging;
 using R5T.Capua;
 using R5T.Capua.Standard;
 using R5T.Dacia;
+using R5T.Karlstad;
 using R5T.Lombardy;
 using R5T.Macommania;
 using R5T.Macommania.Standard;
+using R5T.Miletus.Common;
 using R5T.Richmond;
 using R5T.Palembang;
 using R5T.Palembang.Default;
 using R5T.Ujung;
-
-using ΩMaintenance.Services;
 
 
 namespace ΩMaintenance
@@ -36,7 +36,7 @@ namespace ΩMaintenance
                     new ServiceAction<ITargetFrameworkNameProvider>(() => services.AddSingleton<ITargetFrameworkNameProvider, StaticValueTargetFrameworkNameProvider>())
                 )
                 .AddExecutableFileDirectoryPathProvider<IExecutableFileDirectoryPathProvider>()
-                .AddSingleton<ISolutionAndProjectFileSystemConventions, StandardSolutionAndProjectFileSystemConventions>()
+                .AddSingleton<ISolutionAndProjectFileSystemConvention, StandardSolutionAndProjectFileSystemConvention>()
                 .AddDefaultStringlyTypedPathOperator<IStringlyTypedPathOperator>()
                 ;
         }
