@@ -143,6 +143,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Palembang.Base", "..\..
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Palembang.Default", "..\..\R5T.Palembang.Default\source\R5T.Palembang.Default\R5T.Palembang.Default.csproj", "{34E9D66A-FAD3-4247-8ACB-D994214484D4}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Miletus.Configuration", "..\..\R5T.Miletus\source\R5T.Miletus.Configuration\R5T.Miletus.Configuration.csproj", "{978D2D56-EA0A-4F94-8C09-E78F6F928F42}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -425,6 +427,10 @@ Global
 		{34E9D66A-FAD3-4247-8ACB-D994214484D4}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{34E9D66A-FAD3-4247-8ACB-D994214484D4}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{34E9D66A-FAD3-4247-8ACB-D994214484D4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{978D2D56-EA0A-4F94-8C09-E78F6F928F42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{978D2D56-EA0A-4F94-8C09-E78F6F928F42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{978D2D56-EA0A-4F94-8C09-E78F6F928F42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{978D2D56-EA0A-4F94-8C09-E78F6F928F42}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -498,6 +504,7 @@ Global
 		{C9C54AC3-2DC9-4B98-9889-0DA470EEE065} = {258EFDC4-68B2-473B-B521-1C6891E6936D}
 		{F2984DFC-AF38-4D93-B30A-A25FDCB256D4} = {258EFDC4-68B2-473B-B521-1C6891E6936D}
 		{34E9D66A-FAD3-4247-8ACB-D994214484D4} = {258EFDC4-68B2-473B-B521-1C6891E6936D}
+		{978D2D56-EA0A-4F94-8C09-E78F6F928F42} = {258EFDC4-68B2-473B-B521-1C6891E6936D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {85E1A33C-206A-4438-A6E3-1ED7C638E105}
