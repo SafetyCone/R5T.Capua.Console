@@ -1,9 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-using R5T.Miletus.Configuration;
-
-using ΩMaintenance.Scripts;
+using R5T.Miletus;
 
 
 namespace ΩMaintenance
@@ -16,10 +14,8 @@ namespace ΩMaintenance
             string buildConfigurationName = "Debug";
             string targetFrameworkName = "netcoreapp2.2";
 
-            Configure.ProjectSpecificValues(projectName, buildConfigurationName, targetFrameworkName);
-
             // Scripts.
-            await DeployBuiltBinaries.SubMain();
+            await Maintenance.DeployBuiltBinaries(projectName, buildConfigurationName, targetFrameworkName);
         }   
     }
 }

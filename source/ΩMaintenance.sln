@@ -149,6 +149,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Miletus.Common", "..\..
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Karlstad.Base", "..\..\R5T.Karlstad.Base\source\R5T.Karlstad.Base\R5T.Karlstad.Base.csproj", "{69424A00-B979-4898-A991-B3E6D7DC810E}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Miletus", "..\..\R5T.Miletus\source\R5T.Miletus\R5T.Miletus.csproj", "{02335C86-8B3C-481A-9106-D62FEEA6BA53}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "R5T.Miletus.Capua", "..\..\R5T.Miletus\source\R5T.Miletus.Capua\R5T.Miletus.Capua.csproj", "{B62C1151-8E6B-4260-BDD9-B5BC4440BEE9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -443,6 +447,14 @@ Global
 		{69424A00-B979-4898-A991-B3E6D7DC810E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{69424A00-B979-4898-A991-B3E6D7DC810E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{69424A00-B979-4898-A991-B3E6D7DC810E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{02335C86-8B3C-481A-9106-D62FEEA6BA53}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{02335C86-8B3C-481A-9106-D62FEEA6BA53}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{02335C86-8B3C-481A-9106-D62FEEA6BA53}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{02335C86-8B3C-481A-9106-D62FEEA6BA53}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B62C1151-8E6B-4260-BDD9-B5BC4440BEE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B62C1151-8E6B-4260-BDD9-B5BC4440BEE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B62C1151-8E6B-4260-BDD9-B5BC4440BEE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B62C1151-8E6B-4260-BDD9-B5BC4440BEE9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -519,6 +531,8 @@ Global
 		{978D2D56-EA0A-4F94-8C09-E78F6F928F42} = {258EFDC4-68B2-473B-B521-1C6891E6936D}
 		{5D04DB49-61D8-4B6B-A071-C4A8116E762D} = {258EFDC4-68B2-473B-B521-1C6891E6936D}
 		{69424A00-B979-4898-A991-B3E6D7DC810E} = {258EFDC4-68B2-473B-B521-1C6891E6936D}
+		{02335C86-8B3C-481A-9106-D62FEEA6BA53} = {258EFDC4-68B2-473B-B521-1C6891E6936D}
+		{B62C1151-8E6B-4260-BDD9-B5BC4440BEE9} = {258EFDC4-68B2-473B-B521-1C6891E6936D}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {85E1A33C-206A-4438-A6E3-1ED7C638E105}
