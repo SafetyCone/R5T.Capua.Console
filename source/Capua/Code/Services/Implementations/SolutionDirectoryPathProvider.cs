@@ -1,13 +1,13 @@
-﻿using System;
+using System;
 
 using R5T.Argumentos;
-using R5T.Ujung;
+using R5T.Ujung;using R5T.T0064;
 
 
 
 namespace Capua.Services
-{
-    class SolutionDirectoryPathProvider : ISolutionDirectoryPathProvider
+{[ServiceImplementationMarker]
+    class SolutionDirectoryPathProvider : ISolutionDirectoryPathProvider,IServiceImplementation
     {
         private ICommandLineArgumentsProvider CommandLineArgumentsProvider { get; }
 

@@ -1,11 +1,11 @@
-﻿using System;
+using System;
 
-using R5T.Argumentos;
+using R5T.Argumentos;using R5T.T0064;
 
 
 namespace Capua.Services
-{
-    class DummyCommandLineArgumentsProvider : ICommandLineArgumentsProvider
+{[ServiceImplementationMarker]
+    class DummyCommandLineArgumentsProvider : ICommandLineArgumentsProvider,IServiceImplementation
     {
         public const string[] InitialDummyCommandLineArguments = null;
 

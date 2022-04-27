@@ -1,12 +1,12 @@
-﻿using System;
+using System;
 
 using R5T.Argumentos;
-using R5T.Palembang;
+using R5T.Palembang;using R5T.T0064;
 
 
 namespace Capua.Services
-{
-    class ProjectNameProvider : IProjectNameProvider
+{[ServiceImplementationMarker]
+    class ProjectNameProvider : IProjectNameProvider,IServiceImplementation
     {
         private ICommandLineArgumentsProvider CommandLineArgumentsProvider { get; }
 
