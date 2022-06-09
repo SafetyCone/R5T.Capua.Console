@@ -1,5 +1,4 @@
 <Project Sdk="Microsoft.NET.Sdk">
-
   <ItemGroup>
     <ProjectReference Include="..\..\..\R5T.Argumentos.Standard\source\R5T.Argumentos.Standard\R5T.Argumentos.Standard.csproj" />
     <ProjectReference Include="..\..\..\R5T.Capua\source\R5T.Capua.Standard\R5T.Capua.Standard.csproj" />
@@ -9,11 +8,11 @@
     <ProjectReference Include="..\..\..\R5T.Ujung.Base\source\R5T.Ujung.Base\R5T.Ujung.Base.csproj" />
     <ProjectReference Include="..\Capua.Lib\Capua.Lib.csproj" />
   </ItemGroup>
-
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp2.2</TargetFramework>
     <LangVersion>7.3</LangVersion>
+    <GenerateDocumentationFile>true</GenerateDocumentationFile>
+    <NoWarn>1591;1573</NoWarn>
   </PropertyGroup>
-
 </Project>
